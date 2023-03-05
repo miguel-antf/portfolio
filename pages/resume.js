@@ -8,6 +8,21 @@ import JobsList from '../data/job-list';
 import EduList from "../data/education-list";
 import AwardList from "../data/award-list";
 
+import { keyframes } from "@emotion/react";
+import { Fade } from "react-awesome-reveal";
+
+const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
+
 
 
 export default function Resume() {
@@ -31,9 +46,13 @@ export default function Resume() {
         <main>
           <section className="main-container h-screen overflow-auto ">
             <Header />
-            <section className="row flex-col gap-16 w-full py-[50px] md:py-[100px] pt-[200px] md:pt-[200px]">
+            <section className="row flex-col gap-8 md:gap-16 w-full py-[50px] md:py-[100px] pt-[200px] md:pt-[200px]">
+            <Fade classname="opacity-0" triggerOnce fraction={0} direction={"up"} keyframes={customAnimation}>
               <h2 className="text-6xl md:text-8xl p-0">Miguel Ferreira</h2>
+              </Fade>
+              <Fade classname="opacity-0" triggerOnce fraction={0} delay={100} direction={"up"} keyframes={customAnimation}>
               <div className="flex flex-col gap-4">
+                
                 <p className="text-xl md:text-2xl leading-relaxed	p-0">Frontend developer and UI designer</p>
                 <span className="text-xl md:text-2xl opacity-70 leading-relaxed	p-0">I possess a proactive and ambitious profile, with a strong focus on problem-solving. I am highly curious and interested in the operation of various techniques and platforms. I believe that I would be a valuable asset to any team, but I also possess the ability to perform exceptionally well and independently in individual roles.</span>
                 <div className="flex flex-row gap-8 pt-4">
@@ -42,6 +61,7 @@ export default function Resume() {
                   <a href="https://www.instagram.com/miguelr.ferreira/" className="invert" target="_blank"><img height="28" width="28" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg" /></a>
                 </div>
               </div>
+              </Fade>
 
             </section >
             <section className="block">
@@ -49,6 +69,7 @@ export default function Resume() {
                 <div className='col-span-1 md:col-span-4 '>
                   <div className="sticky top-24">
                     <div className="flex flex-col gap-8 ">
+                    <Fade classname="opacity-0" triggerOnce direction={"up"} keyframes={customAnimation}>
                       <h3 className="text-3xl md:text-5xl">Awards</h3>
                       {awardData.map((award, index) => (
                         <div>
@@ -60,8 +81,10 @@ export default function Resume() {
                           </div>
                         </div>
                       ))}
+                      </Fade>
                     </div>
                     <div className="flex flex-col gap-8 pt-12">
+                    <Fade classname="opacity-0" triggerOnce direction={"up"} keyframes={customAnimation}>
                       <h2 className="text-3xl md:text-5xl">Education</h2>
                       {eduData.map((edu, index) => (
                         <div>
@@ -73,14 +96,17 @@ export default function Resume() {
                           </div>
                         </div>
                       ))}
+                    </Fade>
                     </div>
                   </div>
 
                 </div>
                 <div className='col-span-8'>
                   <div className="flex flex-col gap-8">
+                  < Fade classname="opacity-0" triggerOnce  direction={"up"} keyframes={customAnimation}>
                     <h2 className="text-3xl md:text-5xl">Experience</h2>
-
+                  </Fade>
+                  <Fade classname="opacity-0" triggerOnce cascade damping={0.1}  direction={"up"} keyframes={customAnimation}>
                     {jobData.map((job, index) => (
                       <div className='job'>
                         <div className='flex flex-col md:flex-row'>
@@ -96,7 +122,7 @@ export default function Resume() {
                         </div>
                       </div>
                     ))}
-
+</Fade>
                   </div>
                 </div>
               </div>

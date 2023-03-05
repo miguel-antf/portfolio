@@ -9,6 +9,14 @@ module.exports = {
       colors: {
         'dark-grey': '#111111',
       },
+      fontFamily: {
+        'PP Mori': [
+          'PP Mori Regular',
+          'PP Mori SemiBold',
+          'PP Mori ExtraLight',
+        ],
+        sans: ['"PP Mori"', 'sans-serif']
+      },
       lineHeight: {
         'extra-loose': '1.6em !important',
       },
