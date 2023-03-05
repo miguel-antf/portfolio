@@ -47,10 +47,10 @@ export default function Resume() {
           <section className="main-container h-screen overflow-auto ">
             <Header />
             <section className="row flex-col gap-8 md:gap-16 w-full py-[50px] md:py-[100px] pt-[200px] md:pt-[200px]">
-            <Fade classname="opacity-0" triggerOnce fraction={0} direction={"up"} keyframes={customAnimation}>
+            <Fade className="opacity-0" triggerOnce fraction={0} direction={"up"} keyframes={customAnimation}>
               <h2 className="text-6xl md:text-8xl p-0">Miguel Ferreira</h2>
               </Fade>
-              <Fade classname="opacity-0" triggerOnce fraction={0} delay={100} direction={"up"} keyframes={customAnimation}>
+              <Fade className="opacity-0" triggerOnce fraction={0} delay={100} direction={"up"} keyframes={customAnimation}>
               <div className="flex flex-col gap-4">
                 
                 <p className="text-xl md:text-2xl leading-relaxed	p-0">Frontend developer and UI designer</p>
@@ -69,10 +69,10 @@ export default function Resume() {
                 <div className='col-span-1 md:col-span-4 '>
                   <div className="sticky top-24">
                     <div className="flex flex-col gap-8 ">
-                    <Fade classname="opacity-0" triggerOnce direction={"up"} keyframes={customAnimation}>
+                    <Fade className="opacity-0" triggerOnce direction={"up"} keyframes={customAnimation}>
                       <h3 className="text-3xl md:text-5xl">Awards</h3>
                       {awardData.map((award, index) => (
-                        <div>
+                        <div key={index}>
                           <h3 className='text-xl'>{award.award}</h3>
                           <div className='flex flex-col'>
                             <span className='opacity-70  pb-2'>{award.date}</span>
@@ -84,10 +84,10 @@ export default function Resume() {
                       </Fade>
                     </div>
                     <div className="flex flex-col gap-8 pt-12">
-                    <Fade classname="opacity-0" triggerOnce direction={"up"} keyframes={customAnimation}>
+                    <Fade className="opacity-0" triggerOnce direction={"up"} keyframes={customAnimation}>
                       <h2 className="text-3xl md:text-5xl">Education</h2>
                       {eduData.map((edu, index) => (
-                        <div>
+                        <div key={index}>
                           <h3 className='text-xl'>{edu.course}</h3>
                           <div className='flex flex-col'>
                             <span className='opacity-70 pb-2'>{edu.date}</span>
@@ -103,12 +103,12 @@ export default function Resume() {
                 </div>
                 <div className='col-span-8'>
                   <div className="flex flex-col gap-8">
-                  < Fade classname="opacity-0" triggerOnce  direction={"up"} keyframes={customAnimation}>
+                  < Fade className="opacity-0" triggerOnce  direction={"up"} keyframes={customAnimation}>
                     <h2 className="text-3xl md:text-5xl">Experience</h2>
                   </Fade>
-                  <Fade classname="opacity-0" triggerOnce cascade damping={0.1}  direction={"up"} keyframes={customAnimation}>
+                  <Fade className="opacity-0" triggerOnce cascade damping={0.1}  direction={"up"} keyframes={customAnimation}>
                     {jobData.map((job, index) => (
-                      <div className='job'>
+                      <div className='job'  key={index}>
                         <div className='flex flex-col md:flex-row'>
                           <h3 className='text-xl md:text-2xl'>{job.job}</h3>
                           <h3 className='text-xl md:text-2xl bullet'>{job.company}</h3>

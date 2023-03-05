@@ -27,7 +27,7 @@ export default function About() {
                     <div className="col-span-2 row-span-1 animate-fade-in-down bottom-8">
                     <Fade classname="opacity-0" triggerOnce fraction={0} direction={"up"} keyframes={customAnimation}>
                         <p className="text-xl md:text-2xl opacity-70 leading-relaxed">I am a Porto-based front-end developer with a passion for design and a proactive approach to always learn and grow.</p>
-                        <p className="text-xl md:text-2xl opacity-70 leading-relaxed">When I'm not in front of my computer,  I like to stay active by going to the gym, riding my motorcycle, and exploring the outdoors.</p>
+                        <p className="text-xl md:text-2xl opacity-70 leading-relaxed">When I am not in front of my computer,  I like to stay active by going to the gym, riding my motorcycle, and exploring the outdoors.</p>
                         </Fade>
                     </div>
                    

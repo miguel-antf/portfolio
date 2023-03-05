@@ -81,7 +81,7 @@ export default function Project() {
             <div className="flex flex-row flex-wrap md:flex-nowrap gap-8 w-full ">
               <Fade classname="opacity-0" triggerOnce fraction={0} direction={"up"} delay={100} keyframes={customAnimation} >
                 {project.tech.map((tech, index) => (
-                  <span className="text-2xl md:text-3xl opacity-70">{tech}</span>
+                  <span className="text-2xl md:text-3xl opacity-70" key={index}>{tech}</span>
                 ))}
               </Fade>
             </div>
@@ -93,7 +93,7 @@ export default function Project() {
                 <h5 className="text-5xl md:text-6xl">About</h5>
                 <div>
                   {project.descTwo && project.descTwo.map((descTwo, index) => (
-                    <p className="text-xl md:text-2xl opacity-70 leading-extra-loose">{descTwo}</p>
+                    <p className="text-xl md:text-2xl opacity-70 leading-extra-loose" key={index}>{descTwo}</p>
                   ))}
 
                 </div>
