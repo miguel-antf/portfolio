@@ -98,7 +98,7 @@ export default function Project() {
 
                 </div>
                 {project.website &&
-                  <a href={`${project.website}`} target="_blank" className="inline-flex items-center text-xl md:text-lg font-medium rounded-md text-white">
+                  <a href={`${project.website}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xl md:text-lg font-medium rounded-md text-white">
                     Visit Website
                     <svg className="ml-2 h-5 w-5 transform transition-transform hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M14.707 10.707a1 1 0 0 0 0-1.414l-4-4a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 1 0 0 2h8.586l-2.293 2.293a1 1 0 0 0 1.414 1.414l4-4z" clipRule="evenodd" />

@@ -56,9 +56,9 @@ export default function Resume() {
                 <p className="text-xl md:text-2xl leading-relaxed	p-0">Frontend developer and UI designer</p>
                 <span className="text-xl md:text-2xl opacity-70 leading-relaxed	p-0">I possess a proactive and ambitious profile, with a strong focus on problem-solving. I am highly curious and interested in the operation of various techniques and platforms. I believe that I would be a valuable asset to any team, but I also possess the ability to perform exceptionally well and independently in individual roles.</span>
                 <div className="flex flex-row gap-8 pt-4">
-                  <a href="https://www.linkedin.com/in/miguelantf/" className="invert" target="_blank"><img height="28" width="28" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" /></a>
-                  <a href="https://github.com/miguel-antf" className="invert" target="_blank"><img height="28" width="28" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" /></a>
-                  <a href="https://www.instagram.com/miguelr.ferreira/" className="invert" target="_blank"><img height="28" width="28" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg" /></a>
+                  <a href="https://www.linkedin.com/in/miguelantf/" className="invert" target="_blank" rel="noopener noreferrer"><img height="28" width="28" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" /></a>
+                  <a href="https://github.com/miguel-antf" className="invert" target="_blank" rel="noopener noreferrer"><img height="28" width="28" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" /></a>
+                  <a href="https://www.instagram.com/miguelr.ferreira/" className="invert" target="_blank" rel="noopener noreferrer"><img height="28" width="28" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg" /></a>
                 </div>
               </div>
               </Fade>
