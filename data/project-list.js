@@ -28,7 +28,7 @@ const ProjectList = [
       color: "#2D2C35",
       title: "Greyhound Website",
       job: "Frontend Developer",
-      website: "greyhoundcoin.net",
+      website: "https://greyhoundcoin.net",
       descOne: "Building the next generation of gaming applications on the XRPL around our multi-purpose, modular dashboard.",
       descTwo: [
         "As a front-end developer, I joined the Greyhound team in September 2021 and made a significant impact on the project. My contributions included creating a visually stunning website, crafting a modern and impactful branding, elevating the overall look and feel of the project.", 

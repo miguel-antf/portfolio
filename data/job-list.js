@@ -29,7 +29,7 @@ const JobList = [
       date: "2016",
       company: "Satfiel",
       location: "Penafiel, Portugal",
-      description: "Developed and maintained websites using CMSs, managed and followed up with customers, and created and developed graphic designs."
+      description: "Diagnosed and fixed various technical issues and restored functionality to a wide range of computer equipments."
     }
   ];
   

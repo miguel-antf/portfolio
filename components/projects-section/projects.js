@@ -39,7 +39,7 @@ export default function Projects() {
                 </div>
             </div>
             <div className="row w-full">
-                <div className="grid gap-8 w-100 overflow-hidden grid-cols-2 ">
+                <div className="grid gap-8 w-100 overflow-hidden md:grid-cols-2 ">
                     <Fade classname="opacity-0" triggerOnce fraction={0} direction={"up"} cascade damping={0.1} keyframes={customAnimation}>
                     {projectData.map((project, index) => (
                         <Link className={"col-span-2 lg:col-span-1"} href={`${project.link}`} key={project.id}>
